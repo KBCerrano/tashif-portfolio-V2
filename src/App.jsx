@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/images/react.svg'
 import viteLogo from './assets/images/vite.svg'
 import heroImg from './assets/images/hero.png'
+
+import Navbar from "./assets/Navbar";
+import Experience from "./assets/Experience";
+
+
 import './App.css'
 
 function App() {
@@ -9,35 +14,45 @@ function App() {
 
   return (
     <>
+
+    <Navbar/>
+
+
+
       <section id="center">
+
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+
         <div>
           <h1>Tashif Khan</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
         </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+
+        <button>Button text</button>
       </section>
 
-      <div className="ticks"></div>
 
       <section id="next-steps">
+
+        <div className = "column">
+
+          <Experience/>
+
+
+        
+        </div>
+
+
+
+
+
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>Projects</h2>
+          <p>View all of my completed projects.</p>
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank">
@@ -57,8 +72,8 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>Get in Touch</h2>
+          <p>Message me on any of these platforms.</p>
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">

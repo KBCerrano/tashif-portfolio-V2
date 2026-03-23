@@ -70,18 +70,32 @@
   }
 }
 
+/*
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
 
   & > div {
-    flex: 1 1 0;
+    flex: 1 0 0;
     padding: 32px;
     @media (max-width: 1024px) {
       padding: 24px 20px;
     }
   }
+*/
+
+next-steps{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+
+}
 
   .icon {
     margin-bottom: 16px;
